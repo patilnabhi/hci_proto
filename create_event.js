@@ -75,3 +75,63 @@ $.mobile.document
         listview.before( form );
     });
 })( jQuery );
+
+$('#one').on('pageinit', function(){
+		$("#chooseFile").click(function(e){
+			e.preventDefault();
+			$("input[type=file]").trigger("click");
+		});
+		$("input[type=file]").change(function(){
+			var file = $("input[type=file]")[0].files[0];            
+			$("#preview").empty();
+			displayAsImage3(file, "preview");
+		
+			
+		});
+    });
+
+    function displayAsImage3(file, containerid) {
+		if (typeof FileReader !== "undefined") {
+			var container = document.getElementById(containerid),
+			    img = document.createElement("img"),
+			    reader;
+			container.appendChild(img);
+			reader = new FileReader();
+			reader.onload = (function (theImg) {
+				return function (evt) {
+					theImg.src = evt.target.result;
+				};
+			}(img));
+			reader.readAsDataURL(file);
+		}
+	}
+
+$('#two').on('pageinit', function(){
+		$("#chooseFile2").click(function(e){
+			e.preventDefault();
+			$("input[type=file]").trigger("click");
+		});
+		$("input[type=file]").change(function(){
+			var file = $("input[type=file]")[0].files[0];            
+			$("#preview2").empty();
+			displayAsImage2(file, "preview2");
+		
+			
+		});
+    });
+
+    function displayAsImage2(file, containerid) {
+		if (typeof FileReader !== "undefined") {
+			var container = document.getElementById(containerid),
+			    img = document.createElement("img"),
+			    reader;
+			container.appendChild(img);
+			reader = new FileReader();
+			reader.onload = (function (theImg) {
+				return function (evt) {
+					theImg.src = evt.target.result;
+				};
+			}(img));
+			reader.readAsDataURL(file);
+		}
+	}
