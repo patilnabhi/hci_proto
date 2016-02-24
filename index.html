@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
+
 <link href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.css" rel="stylesheet" type="text/css" />
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link href="create_event.css" rel="stylesheet" type="text/css">    
@@ -10,142 +12,118 @@
 <script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
 <script src="create_event.js"></script>
 
+<title>Event Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
     
-    
-    
-    <title>Event Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
-   
-  </head>
-  <body>
-  
-  <!-- Main Page -->
-    <!-- <div id="main" data-role="page" data-theme="a">
-      <div data-role="header" data-theme="a">
+    <div data-role="header" data-theme="a" data-position="fixed">
+        <a href="#MenuPanel" data-icon="bars" data-iconpos="notext">Menu</a>
+        <!-- class="ui-btn ui-icon-bars ui-btn-icon-left" -->
         <h1>Create Event</h1>
-      </div> -->
+    </div>
       
-      <div data-role="header" data-theme="a" data-position="fixed">
-            <a href="#MenuPanel" data-icon="bars" data-iconpos="notext">Menu</a>
-            <!-- class="ui-btn ui-icon-bars ui-btn-icon-left" -->
-            <h1>Create Event</h1>
-       
-        </div>
-      
-     <div data-role="panel" id="MenuPanel" data-display="overlay"> 
-            <h2>MENU</h2>
-            <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
-        </div>
+    <div data-role="panel" id="MenuPanel" data-display="overlay"> 
+        <h2>MENU</h2>
+        <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
+    </div>
       
     <form>
-      <div data-role="content">        
-     <input type="text" name="text-6" id="text-6" value="" placeholder="Event Name">
-      </div>
-    </form>
-        
-<form>
-<div id="ch-event-cat">
-
-<select id="title-filter-menu" data-native-menu="false" class="filterable-select">
-<option>Choose Event Category</option>
-<option value="orange">Orange</option>
-<option value="apple">Apple</option>
-<option value="peach">Peach</option>
-<option value="lemon">Lemon</option>
-</select>
-</div>
-</form>       
-
-  <form>
-<div class="ui-field-contain">
-
-<select name="select-custom-1" id="select-custom-1" data-native-menu="false">
-<option>Choose Location</option>
-<option value="orange">Orange</option>
-<option value="apple">Apple</option>
-<option value="peach">Peach</option>
-<option value="lemon">Lemon</option>
-</select>
+    <div data-role="content">        
+        <input type="text" name="text-6" id="text-6" value="" placeholder="Event Name">
     </div>
-</form>   
-      
-      
-<form action="#" method="get">
-			<div data-role="fieldcontain" placeholder="Date">
-	     	    <label for="date">Date:</label>
-	     	    <input type="date" name="date" id="date" value=""  />
-			</div>		
-</form>
-
- 
-<form>
-<div class="ui-field-contain">     
- <label for="time-1">Start Time</label>
-<input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
-      </div>    
     </form>
         
-      <form>
-      <div class="ui-field-contain">     
- <label for="time-1">End Time</label>
-<input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
-      </div>
-    </form>
+    <form>
+    <div id="ch-event-cat">
+        <select id="title-filter-menu" data-native-menu="false" class="filterable-select">
+        <option>Choose Event Category</option>
+        <option value="orange">Orange</option>
+        <option value="apple">Apple</option>
+        <option value="peach">Peach</option>
+        <option value="lemon">Lemon</option>
+        </select>
+    </div>
+    </form>       
 
-<form>
-  <div class="ui-field-contain">
-<fieldset data-role="controlgroup" data-type="horizontal">
-    <legend>Share:</legend>
-    <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a">
-    <label for="checkbox-h-2a">Facebook</label>
-    <input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b">
-    <label for="checkbox-h-2b">Twitter</label>
-    <input type="checkbox" name="checkbox-h-2c" id="checkbox-h-2c">
-    <label for="checkbox-h-2c">Google +</label>
-</fieldset>
-  </div>
-    </form>
-
-<form>
-<div class="ui-grid-a">
-        <div class="ui-block-a">
+    <form>
+    <div class="ui-field-contain">
+        <select name="select-custom-1" id="select-custom-1" data-native-menu="false">
+        <option>Choose Location</option>
+        <option value="orange">Orange</option>
+        <option value="apple">Apple</option>
+        <option value="peach">Peach</option>
+        <option value="lemon">Lemon</option>
+        </select>
+    </div>
+    </form>   
             
-                <label for="spin">No. of Participants:</label>
-                <input type="text" data-role="spinbox" name="spin" id="spin" data-options='{"type":"horizontal"}' value="0" min="0" max="100"/>
-        </div>
+    <form action="#" method="get">
+    <div data-role="fieldcontain" placeholder="Date">
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" value=""  />
+    </div>      
+    </form>
+ 
+    <form>
+    <div class="ui-field-contain">     
+        <label for="time-1">Start Time</label>
+        <input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
+    </div>    
+    </form>
+        
+    <form>
+    <div class="ui-field-contain">     
+        <label for="time-1">End Time</label>
+        <input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
+    </div>
+    </form>
+
+    <form>
+    <div class="ui-field-contain">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Share:</legend>
+        <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a">
+        <label for="checkbox-h-2a">Facebook</label>
+        <input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b">
+        <label for="checkbox-h-2b">Twitter</label>
+        <input type="checkbox" name="checkbox-h-2c" id="checkbox-h-2c">
+        <label for="checkbox-h-2c">Google +</label>
+        </fieldset>
+    </div>
+    </form>
+
+    <form>
+    <div class="ui-grid-a">
+
+    <div class="ui-block-a">            
+        <label for="spin">No. of Participants:</label>
+        <input type="text" data-role="spinbox" name="spin" id="spin" data-options='{"type":"horizontal"}' value="0" min="0" max="100"/>
+    </div>
  
     <div class="ui-block-b">
-    <fieldset data-role="controlgroup" data-mini="true" id="pref-button">
-        
+        <fieldset data-role="controlgroup" data-mini="true" id="pref-button">        
         <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
         <label for="radio-choice-v-2a">Preferred</label>
         <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
         <label for="radio-choice-v-2b">Max.</label>
-        
-    </fieldset>
-</div>
-  </div>
-  </form>
-  
-   
+        </fieldset>
+    </div>
+
+    </div>
+    </form>   
       
-  <form>
+    <form>
     <div class="ui-field-contain">
-    <label for="textarea-1">Description:</label>
-    <textarea name="textarea-1" id="textarea-1"></textarea>
+        <label for="textarea-1">Description:</label>
+        <textarea name="textarea-1" id="textarea-1"></textarea>
     </div>
-  </form>
-        
-        
-<button class="ui-btn ui-btn-icon-left ui-shadow-icon ui-btn-b">Submit</button>
-        
-      </div>
-    
- 
-    
-    </div>
- 
-  </body>
+    </form>
+
+    <div id="submit-btn">        
+        <button class="ui-btn ui-btn-icon-left ui-shadow-icon ui-btn-b">Submit</button>        
+    </div> 
+
+</body>
 </html>
