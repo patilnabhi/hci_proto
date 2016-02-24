@@ -39,9 +39,11 @@
             <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
         </div>
       
+    <form>
       <div data-role="content">        
      <input type="text" name="text-6" id="text-6" value="" placeholder="Event Name">
       </div>
+    </form>
         
 <form>
 <div class="ui-field-contain">
@@ -78,66 +80,70 @@
 </form>
 
  
-
+<form>
 <div class="ui-field-contain">     
  <label for="time-1">Start Time</label>
 <input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
-      </div>
+      </div>    
+    </form>
         
-      
+      <form>
       <div class="ui-field-contain">     
  <label for="time-1">End Time</label>
 <input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
       </div>
-      
+    </form>
 
 <form>
   <div class="ui-field-contain">
 <fieldset data-role="controlgroup" data-type="horizontal">
-    <legend>Share:</legend>
-    <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a">
-    <label for="checkbox-h-2a">Facebook</label>
-    <input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b">
-    <label for="checkbox-h-2b">Twitter</label>
-    <input type="checkbox" name="checkbox-h-2c" id="checkbox-h-2c">
-    <label for="checkbox-h-2c">Google +</label>
+    <legend>Share:</legend>
+    <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a">
+    <label for="checkbox-h-2a">Facebook</label>
+    <input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b">
+    <label for="checkbox-h-2b">Twitter</label>
+    <input type="checkbox" name="checkbox-h-2c" id="checkbox-h-2c">
+    <label for="checkbox-h-2c">Google +</label>
 </fieldset>
-</form>
-      
-<form>
+  </div>
+    </form>
 
+<form>
 <div class="ui-grid-a">
         <div class="ui-block-a">
             
                 <label for="spin">No. of Participants:</label>
                 <input type="text" data-role="spinbox" name="spin" id="spin" data-options='{"type":"horizontal"}' value="0" min="0" max="100"/>
         </div>
-      
-    <div class="ui-block-b">
-    <fieldset data-role="controlgroup" data-mini="true">
-        
-        <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
-        <label for="radio-choice-v-2a">Preferred</label>
-        <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
-        <label for="radio-choice-v-2b">Max.</label>
-        
-    </fieldset>
-</div>
  
+    <div class="ui-block-b">
+    <fieldset data-role="controlgroup" data-mini="true" id="pref-button">
+        
+        <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
+        <label for="radio-choice-v-2a">Preferred</label>
+        <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
+        <label for="radio-choice-v-2b">Max.</label>
+        
+    </fieldset>
+</div>
+  </div>
+  </form>
   
-      </form>
+   
       
-        <form>
+  <form>
+    <div class="ui-field-contain">
     <label for="textarea-1">Description:</label>
     <textarea name="textarea-1" id="textarea-1"></textarea>
-</form>
+    </div>
+  </form>
         
         
 <button class="ui-btn ui-btn-icon-left ui-shadow-icon ui-btn-b">Submit</button>
         
       </div>
     
-     <div id="comments-container"></div>
+ 
     
     </div>
  

@@ -1,26 +1,26 @@
 
 
 .ui-selectmenu.ui-popup .ui-input-search {
-    margin-left: .5em;
-    margin-right: .5em;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 .ui-selectmenu.ui-dialog .ui-content {
-    padding-top: 0;
+    padding-top: 0;
 }
 .ui-selectmenu.ui-dialog .ui-selectmenu-list {
-    margin-top: 0;
+    margin-top: 0;
 }
 .ui-selectmenu.ui-popup .ui-selectmenu-list li.ui-first-child .ui-btn {
-    border-top-width: 1px;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+    border-top-width: 1px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
 }
 .ui-selectmenu.ui-dialog .ui-header {
-    border-bottom-width: 1px;
+    border-bottom-width: 1px;
 }
 
-.ui-grid-a a{
-    float: left;
+.ui-grid-a {
+    margin: 20px;
 }
 
 .ui-block-a{
@@ -28,17 +28,19 @@
 }
 
 .ui-block-b{
-    margin: 32px 0px;
+    margin: 32px 0px 0px 0px;
 }
 
 .ui-grid-a>.ui-block-a{
-    width: 52%;
+    float: left;
+    width: 60%;
 }
 
 .ui-grid-a>.ui-block-b{
-    width: 35%;
+    width: 40%;
 }
 
 .ui-field-contain{
     margin: 20px;
 }
+
