@@ -28,15 +28,15 @@
 }
 
 .ui-block-b{
-    margin: 12px 0px;
+    margin: 32px 0px;
 }
 
 .ui-grid-a>.ui-block-a{
-    width: 55%;
+    width: 52%;
 }
 
 .ui-grid-a>.ui-block-b{
-    width: 45%;
+    width: 35%;
 }
 
 .ui-field-contain{
