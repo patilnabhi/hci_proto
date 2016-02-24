@@ -17,24 +17,24 @@
     border-bottom-width: 1px;
 }
 
-.ui-grid-a2 {
+.ui-grid-a {
     margin: 20px;
 }
 
-.ui-block-a2{
+.ui-block-a{
     margin-top: 20px;
 }
 
-.ui-block-b2{
+.ui-block-b{
     margin: 32px 0px 0px 0px;
 }
 
-.ui-grid-a2>.ui-block-a2{
+.ui-grid-a>.ui-block-a{
     float: left;
     width: 60%;
 }
 
-.ui-grid-a2>.ui-block-b2{
+.ui-grid-a>.ui-block-b{
     width: 40%;
 }
 
@@ -55,3 +55,5 @@
 #ui-custom-02 {
   margin-top: 50px;
 }
+
+
