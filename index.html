@@ -19,12 +19,12 @@
 <body>
   
     <!-- "Create Event" page -->
-  
+      
     <div data-role="page" id="one">
     
     <div data-role="header" data-theme="a" data-position="fixed">
         <a href="#MenuPanel" data-icon="bars" data-iconpos="notext">Menu</a>
-        <!-- class="ui-btn ui-icon-bars ui-btn-icon-left" -->
+        class="ui-btn ui-icon-bars ui-btn-icon-left"
         <h1>Create Event</h1>
     </div>
       
@@ -50,7 +50,7 @@
         </select>
     </div>
     </form>       
-
+    
     <form>
     <div class="ui-field-contain">
         <select name="select-custom-1" id="select-custom-1" data-native-menu="false">
@@ -69,7 +69,7 @@
         <input type="date" name="date" id="date" value=""  />
     </div>      
     </form>
- 
+     
     <form>
     <div class="ui-field-contain">     
         <label for="time-1">Start Time</label>
@@ -83,7 +83,7 @@
         <input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
     </div>
     </form>
-
+    
     <form>
     <div class="ui-field-contain">
         <fieldset data-role="controlgroup" data-type="horizontal">
@@ -97,16 +97,16 @@
         </fieldset>
     </div>
     </form>
-
+    
     <form>
-    <div class="ui-grid-a">
-
-    <div class="ui-block-a">            
+    <div class="ui-grid-a2">
+    
+    <div class="ui-block-a2">            
         <label for="spin">No. of Participants:</label>
         <input type="text" data-role="spinbox" name="spin" id="spin" data-options='{"type":"horizontal"}' value="0" min="0" max="100"/>
     </div>
- 
-    <div class="ui-block-b">
+     
+    <div class="ui-block-b2">
         <fieldset data-role="controlgroup" data-mini="true" id="pref-button">        
         <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
         <label for="radio-choice-v-2a">Preferred</label>
@@ -114,7 +114,7 @@
         <label for="radio-choice-v-2b">Max.</label>
         </fieldset>
     </div>
-
+    
     </div>
     </form>   
       
@@ -124,7 +124,7 @@
         <textarea name="textarea-1" id="textarea-1"></textarea>
     </div>
     </form>
-
+    
     <div id="submit-btn">        
         <a href="#two"><button class="ui-btn ui-btn-icon-left ui-shadow-icon ui-btn-b">Submit</button></a>      
     </div> 
@@ -174,6 +174,13 @@
         </select>
     </div>
     </form>
+     
+    <div id ="ui-custom-02">
+        <fieldset class="ui-grid-a">
+        <div class="ui-block-a"><input type="submit" value="Submit" data-theme="a"></div>
+        <div class="ui-block-b"><input type="reset" value="Reset" data-theme="b"></div>
+        </fieldset>
+    </div>
             
     </div>
 

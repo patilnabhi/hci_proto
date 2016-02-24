@@ -17,24 +17,24 @@
     border-bottom-width: 1px;
 }
 
-.ui-grid-a {
+.ui-grid-a2 {
     margin: 20px;
 }
 
-.ui-block-a{
+.ui-block-a2{
     margin-top: 20px;
 }
 
-.ui-block-b{
+.ui-block-b2{
     margin: 32px 0px 0px 0px;
 }
 
-.ui-grid-a>.ui-block-a{
+.ui-grid-a2>.ui-block-a2{
     float: left;
     width: 60%;
 }
 
-.ui-grid-a>.ui-block-b{
+.ui-grid-a2>.ui-block-b2{
     width: 40%;
 }
 
@@ -50,4 +50,8 @@
 #submit-btn {
 	margin-left: 20px;
 	margin-right: 20px;
+}
+
+#ui-custom-02 {
+  margin-top: 50px;
 }
