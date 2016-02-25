@@ -76,62 +76,38 @@ $.mobile.document
     });
 })( jQuery );
 
-// $('#page').on('pageinit', function(){
-// 		$("#chooseFile").click(function(e){
-// 			e.preventDefault();
-// 			$("input[type=file]").trigger("click");
-// 		});
-// 		$("input[type=file]").change(function(){
-// 			var file = $("input[type=file]")[0].files[0];            
-// 			$("#preview").empty();
-// 			displayAsImage3(file, "preview");
-		
-			
-// 		});
-//     });
 
-//     function displayAsImage3(file, containerid) {
-// 		if (typeof FileReader !== "undefined") {
-// 			var container = document.getElementById(containerid),
-// 			    img = document.createElement("img"),
-// 			    reader;
-// 			container.appendChild(img);
-// 			reader = new FileReader();
-// 			reader.onload = (function (theImg) {
-// 				return function (evt) {
-// 					theImg.src = evt.target.result;
-// 				};
-// 			}(img));
-// 			reader.readAsDataURL(file);
-// 		}
-// 	}
+$(function() {
+    $("#uploadFile").on("change", function()
+    {
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+        
+        if (/^image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+            
+            reader.onloadend = function(){ // set image data as background of div
+                $("#imagePreview").css("background-image", "url("+this.result+")");
+            };
+        }
+    });
+});
 
-// $('#two').on('pageinit', function(){
-// 		$("#chooseFile2").click(function(e){
-// 			e.preventDefault();
-// 			$("input[type=file]").trigger("click");
-// 		});
-// 		$("input[type=file]").change(function(){
-// 			var file = $("input[type=file]")[0].files[0];            
-// 			$("#preview2").empty();
-// 			displayAsImage2(file, "preview2");
-		
-			
-// 		});
-//     });
+$(function() {
+    $("#uploadFile2").on("change", function()
+    {
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+        
+        if (/^image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+            
+            reader.onloadend = function(){ // set image data as background of div
+                $("#imagePreview2").css("background-image", "url("+this.result+")");
+            };
+        }
+    });
+});
 
-//     function displayAsImage2(file, containerid) {
-// 		if (typeof FileReader !== "undefined") {
-// 			var container = document.getElementById(containerid),
-// 			    img = document.createElement("img"),
-// 			    reader;
-// 			container.appendChild(img);
-// 			reader = new FileReader();
-// 			reader.onload = (function (theImg) {
-// 				return function (evt) {
-// 					theImg.src = evt.target.result;
-// 				};
-// 			}(img));
-// 			reader.readAsDataURL(file);
-// 		}
-// 	}
