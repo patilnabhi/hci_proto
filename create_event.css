@@ -132,3 +132,14 @@
     box-shadow: 3px 3px 1px #999;
 
 }
+
+.box-content2 {
+    background-color: #CDFFFF;
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid #999;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px #eee;
+
+}

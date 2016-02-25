@@ -18,9 +18,61 @@
 
 <body>
 
+<!-- "Home" Page -->
+
+<div data-role="page" id="one">      
+
+<div data-role="header" data-theme="a" data-position="fixed">
+<a href="#MenuPanel1" data-icon="bars" data-iconpos="notext">Menu</a>
+
+<h1>Home</h1>
+
+<a href="#Search2" data-rel="popup" data-icon="search" data-iconpos="notext">Search</a>
+
+</div>
+
+<div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel1">
+<ul data-role="listview">
+<li data-icon="false"><a href="#one">Home</a></li>
+<li data-icon="false"><a href="#two">Edit Profile</a></li>
+<li data-icon="false"><a href="#three">Create Event</a></li>
+<li data-icon="false"><a href="#four">View Event</a></li>
+</ul>
+</div>
+
+<div data-role="popup" id="Search2" class="ui-content">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+<p>Let's search for the meaning of life!</p>
+<input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
+</div>
+
+
+<div data-role="content" >
+<div class="box-content2">
+<img src="badminton.png" alt="Badminton" style="float:left;width:4em;height:4em;" >
+<h2 for="text-6" style="margin-left:3em;">Badminton Game for 2</h2>
+</div>
+
+
+<div class="box-content2">
+<img src="badminton.png" alt="Badminton" style="float:left;width:4em;height:4em;" >
+<h2 for="text-6" style="margin-left:3em;">Badminton Game for 2</h2>
+</div>
+
+
+
+<div class="box-content2">
+<img src="badminton.png" alt="Badminton" style="float:left;width:4em;height:4em;" >
+<h2 for="text-6" style="margin-left:3em;">Badminton Game for 2</h2>
+</div>
+
+
+</div>
+
+
 <!-- "Create A Profile" page -->
 
-<div data-role="page" id="one">
+<div data-role="page" id="zero">
 
 <div data-role="header" data-theme="a" data-position="fixed">       
 <h1>Create A Profile</h1>
@@ -85,7 +137,7 @@
 
 <div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel">
 <ul data-role="listview">
-<li data-icon="false" id="list_item"><a href="#">Home</a></li>
+<li data-icon="false" id="list_item"><a href="#one">Home</a></li>
 <li data-icon="false"><a href="#two">Edit Profile</a></li>
 <li data-icon="false"><a href="#three">Create Event</a></li>
 <li data-icon="false"><a href="#four">View Event</a></li>
@@ -149,7 +201,7 @@
 
 <div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel2">
 <ul data-role="listview">
-<li data-icon="false"><a href="#">Home</a></li>
+<li data-icon="false"><a href="#one">Home</a></li>
 <li data-icon="false"><a href="#two">Edit Profile</a></li>
 <li data-icon="false"><a href="#three">Create Event</a></li>
 <li data-icon="false"><a href="#four">View Event</a></li>
@@ -275,7 +327,7 @@
 
 <div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel3">
 <ul data-role="listview">
-<li data-icon="false"><a href="#">Home</a></li>
+<li data-icon="false"><a href="#one">Home</a></li>
 <li data-icon="false"><a href="#two">Edit Profile</a></li>
 <li data-icon="false"><a href="#three">Create Event</a></li>
 <li data-icon="false"><a href="#four">View Event</a></li>
