@@ -83,6 +83,4 @@
 	margin-right: 20px;
 }
 
-#list_item {
-    margin-top: 0px;
-}
+.listview {line-height: 0;}
