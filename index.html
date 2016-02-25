@@ -18,7 +18,7 @@
 
 <body>
   
-      <!-- "Create A Profile" page -->
+<!-- "Create A Profile" page -->
   
     <div data-role="page" id="one">
       
@@ -42,8 +42,8 @@
       <div id="ch-event-cat"><div class="ui-bar ui-bar-a" style="height:20px"><center>Photo Upload</center></div></div>    
   
       
- 
-     <!--  <div data-role="content">
+   
+     <div data-role="content">
                 <button id="chooseFile">Choose file</button>
                 <div class="hiddenfile">
                   <input type="file"  data-clear-btn="false" name="image" accept="image/*" capture>
@@ -52,38 +52,38 @@
                 </div>
                 <ul id="info" data-role="listview" data-inset="true">
                 </ul>
-        </div> -->
+        </div>
    
       <div id="imagePreview"></div>
       <div id="upImg">
         <input id="uploadFile" type="file" name="image" class="img" />  </div>          
-
-
+  
+  
       
     <div class="ui-grid-a">
         <div><div class="ui-bar ui-bar-a" style="height:20px"><center>Activities Preferences</center></div></div>    
     </div>      
-
+  
     <form>  
     <div id="ch-event-cat">
         <select name="select-custom-19" id="select-custom-19" multiple="multiple" data-native-menu="false">
-<option>Choose Activity</option>
-<option value="1">The 1st Option</option>
-<option value="2">The 2nd Option</option>
-<option value="3">The 3rd Option</option>
-<option value="4">The 4th Option</option>
+  <option>Choose Activity</option>
+  <option value="1">The 1st Option</option>
+  <option value="2">The 2nd Option</option>
+  <option value="3">The 3rd Option</option>
+  <option value="4">The 4th Option</option>
         </select>
     </div>
     </form>
      
-<div class="ui-responsive" id="ui-custom-02">
-    <div id="submit-btn" ><a href="#two" class="ui-btn ui-btn-b ui-shadow ui-corner-all">Submit</a>
+  <div class="ui-responsive" id="ui-custom-02">
+    <div id="submit-btn" ><a href="#two" class="ui-btn ui-btn-b ui-shadow ui-corner-all">Submit</a>
   <a href="#three" class="ui-btn ui-shadow ui-corner-all">Cancel</a>
-</div>
+  </div>
       </div>
             
     </div>
-
+  
     <!-- "Edit Profile" page -->
   
   <div data-role="page" id="two">
@@ -93,10 +93,14 @@
         <h1>Edit Profile</h1>
     </div>
     
-    <div data-role="panel" id="MenuPanel" data-display="overlay"> 
-        <h2>MENU</h2>
-        <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
-    </div>
+      <div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel">
+        <ul data-role="listview">           
+                <li data-icon="false"><a href="#">Home</a></li>
+               
+                <li data-icon="false"><a href="#two">Edit Profile</a></li>
+                <li data-icon="false"><a href="#three">Create Event</a></li>                
+        </ul>
+    </div>
     
     <form>
     <div data-role="content">    
@@ -121,23 +125,23 @@
     <div class="ui-grid-a">
         <div><div class="ui-bar ui-bar-a" style="height:20px"><center>Activities Preferences</center></div></div>    
     </div>      
-
+  
     <form>  
     <div id="ch-event-cat">
         <select name="select-custom-19" id="select-custom-19" multiple="multiple" data-native-menu="false">
-<option>Choose Activity</option>
-<option value="1">The 1st Option</option>
-<option value="2" selected="selected">The 2nd Option</option>
-<option value="3" selected="selected">The 3rd Option</option>
-<option value="4">The 4th Option</option>
+  <option>Choose Activity</option>
+  <option value="1">The 1st Option</option>
+  <option value="2" selected="selected">The 2nd Option</option>
+  <option value="3" selected="selected">The 3rd Option</option>
+  <option value="4">The 4th Option</option>
         </select>
     </div>
     </form>
      
-<div class="ui-responsive" id="ui-custom-02">
-    <div id="submit-btn" ><a href="#one" class="ui-btn ui-btn-b ui-shadow ui-corner-all">Submit</a>
+  <div class="ui-responsive" id="ui-custom-02">
+    <div id="submit-btn" ><a href="#one" class="ui-btn ui-btn-b ui-shadow ui-corner-all">Submit</a>
   <a href="#one" class="ui-btn ui-shadow ui-corner-all">Cancel</a>
-</div>
+  </div>
       </div>
             
     </div>
@@ -147,15 +151,22 @@
     <div data-role="page" id="three">
     
     <div data-role="header" data-theme="a" data-position="fixed">
-        <a href="#MenuPanel" data-icon="bars" data-iconpos="notext">Menu</a>
+        <a href="#MenuPanel2" data-icon="bars" data-iconpos="notext">Menu</a>
         
         <h1>Create Event</h1>
     </div>
       
-    <div data-role="panel" id="MenuPanel" data-display="overlay"> 
-        <h2>MENU</h2>
-        <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
-    </div>
+      
+      <div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel2">
+        <ul data-role="listview">           
+                <li data-icon="false"><a href="#">Home</a></li>
+               
+                <li data-icon="false"><a href="#two">Edit Profile</a></li>
+                <li data-icon="false"><a href="#three">Create Event</a></li>                
+        </ul>
+    </div>
+      
+
       
     <form>
     <div data-role="content">        
@@ -250,7 +261,7 @@
     </form>
     
     <div id="submit-btn">  
-      <a href="#two" class="ui-btn ui-btn-b" >Submit</a>     
+      <a href="#" class="ui-btn ui-btn-b" >Submit</a>     
     </div> 
       
     </div>
