@@ -27,7 +27,7 @@
 
 <h1>Home</h1>
 
-<a href="#Search2" data-rel="popup" data-icon="search" data-iconpos="notext">Search</a>
+<a href="#Search" data-rel="popup" data-icon="search" data-iconpos="notext">Search</a>
 
 </div>
 
@@ -40,14 +40,20 @@
 </ul>
 </div>
 
-<div data-role="popup" id="Search2" class="ui-content">
+<div data-role="popup" id="Search" class="ui-content">
 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
 <p>Let's search for the meaning of life!</p>
 <input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
 </div>
 
 
-<div data-role="content" >
+
+<div class="box-content2">
+<img src="badminton.png" alt="Badminton" style="float:left;width:4em;height:4em;" >
+<h2 for="text-6" style="margin-left:3em;">Badminton Game for 2</h2>
+</div>
+
+
 <div class="box-content2">
 <img src="badminton.png" alt="Badminton" style="float:left;width:4em;height:4em;" >
 <h2 for="text-6" style="margin-left:3em;">Badminton Game for 2</h2>
@@ -59,72 +65,15 @@
 <h2 for="text-6" style="margin-left:3em;">Badminton Game for 2</h2>
 </div>
 
-
-
 <div class="box-content2">
 <img src="badminton.png" alt="Badminton" style="float:left;width:4em;height:4em;" >
 <h2 for="text-6" style="margin-left:3em;">Badminton Game for 2</h2>
 </div>
 
-
 </div>
 
 
-<!-- "Create A Profile" page -->
 
-<div data-role="page" id="zero">
-
-<div data-role="header" data-theme="a" data-position="fixed">       
-<h1>Create A Profile</h1>
-</div>
-
-<form>
-<div data-role="content">    
-<input type="text" name="text-6" id="text-6" value="" placeholder="Your Name">
-
-<input type="text" name="text-6" id="text-6" value="@u.northwestern.edu" placeholder="@u.northwestern.edu">
-
-<input type="text" name="text-6" id="text-6" value="" placeholder="Password">
-
-<input type="text" name="text-6" id="text-6" value="" placeholder="Confirm Password">
-</div>
-
-</form>
-
-<div id="ch-event-cat"><div class="ui-bar ui-bar-a" style="height:20px"><center>Photo Upload</center></div></div>    
-
-
-
-
-<div id="imagePreview"></div>
-<div id="upImg">
-<input id="uploadFile" type="file" name="image" class="img" />  </div>          
-
-
-
-<div class="ui-grid-a">
-<div><div class="ui-bar ui-bar-a" style="height:20px"><center>Activities Preferences</center></div></div>    
-</div>      
-
-<form>  
-<div id="ch-event-cat">
-<select name="select-custom-19" id="select-custom-19" multiple="multiple" data-native-menu="false">
-<option>Choose Activity</option>
-<option value="1">The 1st Option</option>
-<option value="2">The 2nd Option</option>
-<option value="3">The 3rd Option</option>
-<option value="4">The 4th Option</option>
-</select>
-</div>
-</form>
-
-<div class="ui-responsive" id="ui-custom-02">
-<div id="submit-btn" ><a href="#two" class="ui-btn ui-btn-b ui-shadow ui-corner-all">Submit</a>
-<a href="#three" class="ui-btn ui-shadow ui-corner-all">Cancel</a>
-</div>
-</div>
-
-</div>
 
 <!-- "Edit Profile" page -->
 
@@ -397,12 +346,62 @@
 </div>
 
 </div>
+
+
+<!-- "Create A Profile" page -->
+
+<div data-role="page" id="five">
+
+<div data-role="header" data-theme="a" data-position="fixed">       
+<h1>Create A Profile</h1>
 </div>
+
+<form>
+<div data-role="content">    
+<input type="text" name="text-6" id="text-6" value="" placeholder="Your Name">
+
+<input type="text" name="text-6" id="text-6" value="@u.northwestern.edu" placeholder="@u.northwestern.edu">
+
+<input type="text" name="text-6" id="text-6" value="" placeholder="Password">
+
+<input type="text" name="text-6" id="text-6" value="" placeholder="Confirm Password">
 </div>
+
+</form>
+
+<div id="ch-event-cat"><div class="ui-bar ui-bar-a" style="height:20px"><center>Photo Upload</center></div></div>    
 
 
 
+
+<div id="imagePreview"></div>
+<div id="upImg">
+<input id="uploadFile" type="file" name="image" class="img" />  </div>          
+
+
+
+<div class="ui-grid-a">
+<div><div class="ui-bar ui-bar-a" style="height:20px"><center>Activities Preferences</center></div></div>    
+</div>      
+
+<form>  
+<div id="ch-event-cat">
+<select name="select-custom-19" id="select-custom-19" multiple="multiple" data-native-menu="false">
+<option>Choose Activity</option>
+<option value="1">The 1st Option</option>
+<option value="2">The 2nd Option</option>
+<option value="3">The 3rd Option</option>
+<option value="4">The 4th Option</option>
+</select>
 </div>
+</form>
+
+<div class="ui-responsive" id="ui-custom-02">
+<div id="submit-btn" ><a href="#two" class="ui-btn ui-btn-b ui-shadow ui-corner-all">Submit</a>
+<a href="#three" class="ui-btn ui-shadow ui-corner-all">Cancel</a>
+</div>
+</div>
+
 </div>
 
 </body>
