@@ -6,7 +6,7 @@
 <link href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.css" rel="stylesheet" type="text/css" />
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link href="create_event.css" rel="stylesheet" type="text/css">    
-    
+
 <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>
 <script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
@@ -17,243 +17,341 @@
 </head>
 
 <body>
-  
+
 <!-- "Create A Profile" page -->
-  
-    <div data-role="page" id="one">
-      
-    <div data-role="header" data-theme="a" data-position="fixed">       
-        <h1>Create A Profile</h1>
-    </div>
-    
-    <form>
-    <div data-role="content">    
-        <input type="text" name="text-6" id="text-6" value="" placeholder="Your Name">
-    
-        <input type="text" name="text-6" id="text-6" value="@u.northwestern.edu" placeholder="@u.northwestern.edu">
-    
-        <input type="text" name="text-6" id="text-6" value="" placeholder="Password">
-    
-        <input type="text" name="text-6" id="text-6" value="" placeholder="Confirm Password">
-    </div>
-    
-    </form>
-      
-      <div id="ch-event-cat"><div class="ui-bar ui-bar-a" style="height:20px"><center>Photo Upload</center></div></div>    
-  
- 
-   
-      <div id="imagePreview"></div>
-      <div id="upImg">
-        <input id="uploadFile" type="file" name="image" class="img" />  </div>          
-  
-  
-      
-    <div class="ui-grid-a">
-        <div><div class="ui-bar ui-bar-a" style="height:20px"><center>Activities Preferences</center></div></div>    
-    </div>      
-  
-    <form>  
-    <div id="ch-event-cat">
-        <select name="select-custom-19" id="select-custom-19" multiple="multiple" data-native-menu="false">
-  <option>Choose Activity</option>
-  <option value="1">The 1st Option</option>
-  <option value="2">The 2nd Option</option>
-  <option value="3">The 3rd Option</option>
-  <option value="4">The 4th Option</option>
-        </select>
-    </div>
-    </form>
-     
-  <div class="ui-responsive" id="ui-custom-02">
-    <div id="submit-btn" ><a href="#two" class="ui-btn ui-btn-b ui-shadow ui-corner-all">Submit</a>
-  <a href="#three" class="ui-btn ui-shadow ui-corner-all">Cancel</a>
-  </div>
-      </div>
-            
-    </div>
-  
-    <!-- "Edit Profile" page -->
-  
-  <div data-role="page" id="two">
-      
-    <div data-role="header" data-theme="a" data-position="fixed"> 
-      <a href="#MenuPanel" data-icon="bars" data-iconpos="notext">Menu</a>
-        <h1>Edit Profile</h1>
-    </div>
-    
-      <div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel">
-        <ul data-role="listview">           
-                <li data-icon="false" class="list_item"><a href="#">Home</a></li>               
-                <li data-icon="false" ><a href="#two">Edit Profile</a></li>
-                <li data-icon="false" ><a href="#three">Create Event</a></li>                
-        </ul>
-    </div>
-    
-    <form>
-    <div data-role="content">    
-        <input type="text" name="text-6" id="text-6" value="Abhishek Patil" placeholder="Your Name">
-    
-        <input type="text" name="text-6" id="text-6" value="@u.northwestern.edu" placeholder="abhishekpatil2016@u.northwestern.edu">
-    
-        <input type="text" name="text-6" id="text-6" value="******" placeholder="Password">
-    
-        <input type="text" name="text-6" id="text-6" value="******" placeholder="Confirm Password">
-    </div>
-    
-    </form>
-      
-    <div id="ch-event-cat"><div class="ui-bar ui-bar-a" style="height:20px"><center>Photo Upload</center></div></div>  
-      
-     <div id="imagePreview2"></div>
-      <div id="upImg">
-        <input id="uploadFile2" type="file" name="image" class="img" />  </div> 
-    
-    
-    <div class="ui-grid-a">
-        <div><div class="ui-bar ui-bar-a" style="height:20px"><center>Activities Preferences</center></div></div>    
-    </div>      
-  
-    <form>  
-    <div id="ch-event-cat">
-        <select name="select-custom-19" id="select-custom-19" multiple="multiple" data-native-menu="false">
-  <option>Choose Activity</option>
-  <option value="1">The 1st Option</option>
-  <option value="2" selected="selected">The 2nd Option</option>
-  <option value="3" selected="selected">The 3rd Option</option>
-  <option value="4">The 4th Option</option>
-        </select>
-    </div>
-    </form>
-     
-  <div class="ui-responsive" id="ui-custom-02">
-    <div id="submit-btn" ><a href="#one" class="ui-btn ui-btn-b ui-shadow ui-corner-all">Submit</a>
-  <a href="#one" class="ui-btn ui-shadow ui-corner-all">Cancel</a>
-  </div>
-      </div>
-            
-    </div>
-  
+
+<div data-role="page" id="one">
+
+<div data-role="header" data-theme="a" data-position="fixed">       
+<h1>Create A Profile</h1>
+</div>
+
+<form>
+<div data-role="content">    
+<input type="text" name="text-6" id="text-6" value="" placeholder="Your Name">
+
+<input type="text" name="text-6" id="text-6" value="@u.northwestern.edu" placeholder="@u.northwestern.edu">
+
+<input type="text" name="text-6" id="text-6" value="" placeholder="Password">
+
+<input type="text" name="text-6" id="text-6" value="" placeholder="Confirm Password">
+</div>
+
+</form>
+
+<div id="ch-event-cat"><div class="ui-bar ui-bar-a" style="height:20px"><center>Photo Upload</center></div></div>    
+
+
+
+
+<div id="imagePreview"></div>
+<div id="upImg">
+<input id="uploadFile" type="file" name="image" class="img" />  </div>          
+
+
+
+<div class="ui-grid-a">
+<div><div class="ui-bar ui-bar-a" style="height:20px"><center>Activities Preferences</center></div></div>    
+</div>      
+
+<form>  
+<div id="ch-event-cat">
+<select name="select-custom-19" id="select-custom-19" multiple="multiple" data-native-menu="false">
+<option>Choose Activity</option>
+<option value="1">The 1st Option</option>
+<option value="2">The 2nd Option</option>
+<option value="3">The 3rd Option</option>
+<option value="4">The 4th Option</option>
+</select>
+</div>
+</form>
+
+<div class="ui-responsive" id="ui-custom-02">
+<div id="submit-btn" ><a href="#two" class="ui-btn ui-btn-b ui-shadow ui-corner-all">Submit</a>
+<a href="#three" class="ui-btn ui-shadow ui-corner-all">Cancel</a>
+</div>
+</div>
+
+</div>
+
+<!-- "Edit Profile" page -->
+
+<div data-role="page" id="two">
+
+<div data-role="header" data-theme="a" data-position="fixed"> 
+<a href="#MenuPanel" data-icon="bars" data-iconpos="notext">Menu</a>
+<h1>Edit Profile</h1>
+</div>
+
+<div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel">
+<ul data-role="listview">
+<li data-icon="false" id="list_item"><a href="#">Home</a></li>
+<li data-icon="false"><a href="#two">Edit Profile</a></li>
+<li data-icon="false"><a href="#three">Create Event</a></li>
+<li data-icon="false"><a href="#four">View Event</a></li>
+</ul>
+</div>
+
+<form>
+<div data-role="content">    
+<input type="text" name="text-6" id="text-6" value="Abhishek Patil" placeholder="Your Name">
+
+<input type="text" name="text-6" id="text-6" value="@u.northwestern.edu" placeholder="abhishekpatil2016@u.northwestern.edu">
+
+<input type="text" name="text-6" id="text-6" value="******" placeholder="Password">
+
+<input type="text" name="text-6" id="text-6" value="******" placeholder="Confirm Password">
+</div>
+
+</form>
+
+<div id="ch-event-cat"><div class="ui-bar ui-bar-a" style="height:20px"><center>Photo Upload</center></div></div>  
+
+<div id="imagePreview2"></div>
+<div id="upImg">
+<input id="uploadFile2" type="file" name="image" class="img" />  </div> 
+
+
+<div class="ui-grid-a">
+<div><div class="ui-bar ui-bar-a" style="height:20px"><center>Activities Preferences</center></div></div>    
+</div>      
+
+<form>  
+<div id="ch-event-cat">
+<select name="select-custom-19" id="select-custom-19" multiple="multiple" data-native-menu="false">
+<option>Choose Activity</option>
+<option value="1">The 1st Option</option>
+<option value="2" selected="selected">The 2nd Option</option>
+<option value="3" selected="selected">The 3rd Option</option>
+<option value="4">The 4th Option</option>
+</select>
+</div>
+</form>
+
+<div class="ui-responsive" id="ui-custom-02">
+<div id="submit-btn" ><a href="#one" class="ui-btn ui-btn-b ui-shadow ui-corner-all">Submit</a>
+<a href="#one" class="ui-btn ui-shadow ui-corner-all">Cancel</a>
+</div>
+</div>
+
+</div>
+
 <!--     "Create Event" page -->
-      
-    <div data-role="page" id="three">
-    
-    <div data-role="header" data-theme="a" data-position="fixed">
-        <a href="#MenuPanel2" data-icon="bars" data-iconpos="notext">Menu</a>
-        
-        <h1>Create Event</h1>
-    </div>
-      
-      
-      <div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel2">
-        <ul data-role="listview">           
-                <li data-icon="false"><a href="#">Home</a></li>               
-                <li data-icon="false"><a href="#two">Edit Profile</a></li>
-                <li data-icon="false"><a href="#three">Create Event</a></li>                
-        </ul>
-    </div>
-      
 
-      
-    <form>
-    <div data-role="content">        
-        <input type="text" name="text-6" id="text-6" value="" placeholder="Event Name">
-    </div>
-    </form>
-        
-    <form>
-    <div id="ch-event-cat">
-        <select id="title-filter-menu" data-native-menu="false" class="filterable-select">
-        <option>Choose Event Category</option>
-        <option value="orange">Orange</option>
-        <option value="apple">Apple</option>
-        <option value="peach">Peach</option>
-        <option value="lemon">Lemon</option>
-        </select>
-    </div>
-    </form>       
-    
-    <form>
-    <div class="ui-field-contain">
-        <select name="select-custom-1" id="select-custom-1" data-native-menu="false">
-        <option>Choose Location</option>
-        <option value="orange">Orange</option>
-        <option value="apple">Apple</option>
-        <option value="peach">Peach</option>
-        <option value="lemon">Lemon</option>
-        </select>
-    </div>
-    </form>   
-            
-    <form action="#" method="get">
-    <div data-role="fieldcontain" placeholder="Date">
-        <label for="date">Date:</label>
-        <input type="date" name="date" id="date" value=""  />
-    </div>      
-    </form>
-     
-    <form>
-    <div class="ui-field-contain">     
-        <label for="time-1">Start Time</label>
-        <input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
-    </div>    
-    </form>
-        
-    <form>
-    <div class="ui-field-contain">     
-        <label for="time-1">End Time</label>
-        <input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
-    </div>
-    </form>
-    
-    <form>
-    <div class="ui-field-contain">
-        <fieldset data-role="controlgroup" data-type="horizontal">
-        <legend>Share:</legend>
-        <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a">
-        <label for="checkbox-h-2a">Facebook</label>
-        <input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b">
-        <label for="checkbox-h-2b">Twitter</label>
-        <input type="checkbox" name="checkbox-h-2c" id="checkbox-h-2c">
-        <label for="checkbox-h-2c">Google +</label>
-        </fieldset>
-    </div>
-    </form>
-    
-    <form>
-    <div class="ui-grid-a">
-    
-    <div class="ui-block-a">            
-        <label for="spin">No. of Participants:</label>
-        <input type="text" data-role="spinbox" name="spin" id="spin" data-options='{"type":"horizontal"}' value="0" min="0" max="100"/>
-    </div>
-     
-    <div class="ui-block-b">
-        <fieldset data-role="controlgroup" data-mini="true" id="pref-button">        
-        <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
-        <label for="radio-choice-v-2a">Preferred</label>
-        <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
-        <label for="radio-choice-v-2b">Max.</label>
-        </fieldset>
-    </div>
-    
-    </div>
-    </form>   
-      
-    <form>
-    <div class="ui-field-contain">
-        <label for="textarea-1">Description:</label>
-        <textarea name="textarea-1" id="textarea-1"></textarea>
-    </div>
-    </form>
-    
-    <div id="submit-btn">  
-      <a href="#" class="ui-btn ui-btn-b" >Submit</a>     
-    </div> 
-      
-    </div>
-  
+<div data-role="page" id="three">
 
+<div data-role="header" data-theme="a" data-position="fixed">
+<a href="#MenuPanel2" data-icon="bars" data-iconpos="notext">Menu</a>
+
+<h1>Create Event</h1>
+</div>
+
+
+<div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel2">
+<ul data-role="listview">
+<li data-icon="false"><a href="#">Home</a></li>
+<li data-icon="false"><a href="#two">Edit Profile</a></li>
+<li data-icon="false"><a href="#three">Create Event</a></li>
+<li data-icon="false"><a href="#four">View Event</a></li>
+</ul>
+</div>
+
+
+
+<form>
+<div data-role="content">        
+<input type="text" name="text-6" id="text-6" value="" placeholder="Event Name">
+</div>
+</form>
+
+<form>
+<div id="ch-event-cat">
+<select id="title-filter-menu" data-native-menu="false" class="filterable-select">
+<option>Choose Event Category</option>
+<option value="orange">Orange</option>
+<option value="apple">Apple</option>
+<option value="peach">Peach</option>
+<option value="lemon">Lemon</option>
+</select>
+</div>
+</form>       
+
+<form>
+<div class="ui-field-contain">
+<select name="select-custom-1" id="select-custom-1" data-native-menu="false">
+<option>Choose Location</option>
+<option value="orange">Orange</option>
+<option value="apple">Apple</option>
+<option value="peach">Peach</option>
+<option value="lemon">Lemon</option>
+</select>
+</div>
+</form>   
+
+<form action="#" method="get">
+<div data-role="fieldcontain" placeholder="Date">
+<label for="date">Date:</label>
+<input type="date" name="date" id="date" value=""  />
+</div>      
+</form>
+
+<form>
+<div class="ui-field-contain">     
+<label for="time-1">Start Time</label>
+<input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
+</div>    
+</form>
+
+<form>
+<div class="ui-field-contain">     
+<label for="time-1">End Time</label>
+<input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
+</div>
+</form>
+
+<form>
+<div class="ui-field-contain">
+<fieldset data-role="controlgroup" data-type="horizontal">
+<legend>Share:</legend>
+<input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a">
+<label for="checkbox-h-2a">Facebook</label>
+<input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b">
+<label for="checkbox-h-2b">Twitter</label>
+<input type="checkbox" name="checkbox-h-2c" id="checkbox-h-2c">
+<label for="checkbox-h-2c">Google +</label>
+</fieldset>
+</div>
+</form>
+
+<form>
+<div class="ui-grid-a">
+
+<div class="ui-block-a">            
+<label for="spin">No. of Participants:</label>
+<input type="text" data-role="spinbox" name="spin" id="spin" data-options='{"type":"horizontal"}' value="0" min="0" max="100"/>
+</div>
+
+<div class="ui-block-b">
+<fieldset data-role="controlgroup" data-mini="true" id="pref-button">        
+<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
+<label for="radio-choice-v-2a">Preferred</label>
+<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
+<label for="radio-choice-v-2b">Max.</label>
+</fieldset>
+</div>
+
+</div>
+</form>   
+
+<form>
+<div class="ui-field-contain">
+<label for="textarea-1">Description:</label>
+<textarea name="textarea-1" id="textarea-1"></textarea>
+</div>
+</form>
+
+<div id="submit-btn">  
+<a href="#four" class="ui-btn ui-btn-b" >Submit</a>     
+</div> 
+
+
+
+</div>
+
+<!-- "View Event" Page -->
+
+<div data-role="page" id="four">
+
+
+
+<div data-role="header" data-theme="a" data-position="fixed">
+<a href="#MenuPanel3" data-icon="bars" data-iconpos="notext">Menu</a>
+<!-- class="ui-btn ui-icon-bars ui-btn-icon-left" -->
+<h1>View Event</h1>
+
+<a href="#Search" data-rel="popup" data-icon="search" data-iconpos="notext">Search</a>
+
+</div>
+
+<div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel2">
+<ul data-role="listview">
+<li data-icon="false"><a href="#">Home</a></li>
+<li data-icon="false"><a href="#two">Edit Profile</a></li>
+<li data-icon="false"><a href="#three">Create Event</a></li>
+<li data-icon="false"><a href="#four">View Event</a></li>
+</ul>
+</div>
+
+<div data-role="popup" id="Search" class="ui-content">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+<p>Let's search for the meaning of life!</p>
+<input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
+</div>
+
+
+<div data-role="content" >
+<div class="box-content">
+<img src="badminton.png" alt="Badminton" style="float:left;width:4em;height:4em;" >
+<h2 for="text-6" style="margin-left:3em;">Badminton Game for 2</h2>
+</div>
+
+<form action="#" method="post">      
+<div data-role="fieldcontain">
+<fieldset data-role="controlgroup" data-type="horizontal">
+
+<input name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked" type="radio">
+<label for="radio-choice-h-2a">Going</label>
+<input name="radio-choice-h-2" id="radio-choice-h-2b" value="off" type="radio">
+<label for="radio-choice-h-2b">Maybe</label>
+<input name="radio-choice-h-2" id="radio-choice-h-2c" value="other" type="radio">
+<label for="radio-choice-h-2c">Not Going</label>
+</fieldset>
+</div>
+</form>
+
+<div class="box-content">
+<div style="padding: 0.1em;">
+<h4 style="margin:auto;margin-top:.5em;">Time:</h4>
+<p style="margin:auto;margin-left:3em;">12:00pm to 2:00pm</p>
+<h4 style="margin:auto;margin-top:.5em;">Location:</h4>
+<p style="margin:auto;margin-left:3em;">Abhishek's House</p>
+<h4 style="margin:auto;margin-top:.5em;">Description:</h4>
+<p style="margin:auto;margin-left:3em;">A battle to the death!1</p>
+</div>
+</div>
+
+<div class="box-content">
+<div style="padding: 0.1em;">
+<h4 style="margin:auto;margin-top:.5em;">People:</h4>
+<img src="user1.jpeg" alt="Mike" class="profile" ></img>
+<img src="user2.jpeg" alt="Michael" class="profile" ></img>
+</div>
+</div>
+
+<div class="box-content">
+<div style="padding: 0.1em;">
+<h4 style="margin:auto;margin-top:.5em;">Discussion:</h4>
+<div style="margin:auto;margin-left:1em;">
+<div class="box-msg">
+<div data-role="header" data-theme="a" >
+<h4>Comment</h4>
+<button class="ui-btn ui-btn-icon-left ui-shadow-icon ui-btn-b">Upload Photo</button>
+</div>
+<textarea name="textarea-1" id="textarea-1" placeholder="blah"></textarea>
+</div>
+<h4 style="color:#999;margin:auto;margin-top:2em;">Recent Activity</h4>
+<div class="box-msg" style="padding:1em;">
+<p>No Activity yet</p>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
 
 </body>
 
