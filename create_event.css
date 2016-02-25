@@ -133,13 +133,29 @@
 
 }
 
-.box-content2 {
-    background-color: #CDFFFF;
-    margin: 20px;
-    margin-top: 40px;
-    border: 2px solid #999;
-    padding: 1em;
-    border-radius: 5px;
-    box-shadow: 3px 3px 1px #eee;
+img {
+  float: left;
+  height: 6em;
+  width: 6em;
+  padding-right: 5px;
+}
+.profile {
+    width:3em;
+    height:3em;
+    border:2px solid #999;
+}
 
+.box-content div{
+  height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.location{
+  float: right;
+}
+.participants img{
+  float: right;
 }
