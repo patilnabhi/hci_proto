@@ -133,19 +133,32 @@
 
 }
 
-img {
+/* img {
   float: left;
   height: 6em;
   width: 6em;
   padding-right: 5px;
-}
-.profile {
+} */
+
+.profile2 {
+  float: left;
     width:3em;
     height:3em;
     border:2px solid #999;
+  padding-right: 5px;
 }
 
-.box-content div{
+.box-content2 {
+    background-color: #d3f1a7;
+    margin: auto;
+    margin-top: 0.5em;
+    border: 2px solid #999;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px #eee;
+
+}
+.box-content2 div{
   height: 1.5em;
 }
 
@@ -153,7 +166,7 @@ a {
   text-decoration: none;
   color: black;
 }
-.location{
+.location {
   float: right;
 }
 .participants img{
