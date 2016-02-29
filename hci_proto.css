@@ -188,3 +188,10 @@ a {
   border-bottom-right-radius: inherit;
 }
 
+#v-evnt1 {
+  margin-bottom: 0px;
+}
+
+#v-evnt2 {
+  margin-top: 0px;
+}

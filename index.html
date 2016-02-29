@@ -20,32 +20,32 @@
   
   <!-- "Login" Page -->
 
-<div data-role="page" id="login">      
+<div id="login" data-role="page">      
 
-<div data-role="header" data-theme="a" data-position="fixed">
+<div id="header" data-role="header" data-theme="a" data-position="fixed">
 
 
-<h1>NUActive</h1>
+<h1 id="header_text">NUActive</h1>
 
 
 
 </div>
 
 <form>
-     <label style="margin:20px;" for="text-1">Email:</label>
-  <div style="margin:20px;">
+     <label id="labels" for="text-1">Email:</label>
+  <div id="text-field">
     <input type="text" name="text-1" id="text-1" value="@u.northwestern.edu"></div>
-  <label style="margin:20px;" for="text-1">Password:</label>
-  <div style="margin:20px;">
+  <label id="labels" for="text-1">Password:</label>
+  <div id="text-field">
     <input type="text" name="text-1" id="text-1" value=""></div>
-     
+     
 </form>
   
-  <div style="margin:20px; margin-right:7px;" align="right"><a href="#one" class="ui-btn ui-btn-b ui-btn-inline">Log In</a></div>
+  <div><a id="login-btn" href="#one" class="ui-btn ui-btn-b ui-btn-inline">Log In</a></div>
   
-  <div id="ch-event-cat"><div class="ui-bar ui-bar-a" style="height:20px"><center>Not A User Yet?</center></div></div> 
+  <div id="ch-event-cat" class="ui-bar" style="height:20px"><center>Not A User Yet?</center></div>
   
-<div style="margin: 20px; margin-left:60px; margin-right:60px;"><a href="#five" class="ui-btn ui-btn-b">Create A Profile</a></div>
+<div ><a id="createprofile-btn" href="#five" class="ui-btn ui-btn-b">Create A Profile</a></div>
 
 </div>
 
@@ -327,29 +327,29 @@
 
   
   <div class="ui-corner-all custom-corners">
-  <div class="ui-bar ui-bar-a">
+  <div id="v-evnt1" class="ui-bar ui-bar-a">
     <h3>Badminton Game for 2</h3>
-  </div>
-  <div class="ui-body ui-body-a">
-    <h4 style="margin:auto;margin-top:.5em;margin-bottom:0.5em;">Time:</h4>
+  </div>
+  <div id="v-evnt2" class="ui-body ui-body-a">
+    <h4 style="margin:auto;margin-top:.5em;margin-bottom:0.5em;">Time:</h4>
 <p style="margin:auto;margin-left:3em;">12:00pm to 2:00pm</p>
 <h4 style="margin:auto;margin-top:.5em;margin-bottom:0.5em;">Location:</h4>
 <p style="margin:auto;margin-left:3em;">Abhishek's House</p>
 <h4 style="margin:auto;margin-top:.5em;margin-bottom:0.5em;">Description:</h4>
 <p style="margin:auto;margin-left:3em;margin-bottom:1em;">A battle to the death!1</p>
 
-  </div>
+  </div>
 </div>
   
     <div class="ui-corner-all custom-corners">
-  <div class="ui-bar ui-bar-a">
+  <div class="ui-bar ui-bar-a">
     <h3>Team Members</h3>
-  </div>
-  <div class="ui-body ui-body-a">
-    <img src="usr1.jpg" alt="Mike" class="profile2" ></img>
+  </div>
+  <div class="ui-body ui-body-a">
+    <img src="usr1.jpg" alt="Mike" class="profile2" ></img>
 <img src="usr2.jpg" alt="Michael" class="profile2" ></img>
 
-  </div>
+  </div>
 </div>
   
   <form action="#" method="post">      
@@ -368,16 +368,16 @@
 </form>
   
       <div class="ui-corner-all custom-corners">
-  <div class="ui-bar ui-bar-a">
+  <div class="ui-bar ui-bar-a">
     <h3>Discussion Forum</h3>
     
-      <div style="margin-left:0px; margin-right:0px; margin-top:20px;" class="ui-body ui-body-a ui-corner-all">
+      <div style="margin-left:0px; margin-right:0px; margin-top:20px;" class="ui-body ui-body-a ui-corner-all">
 <h3>Mike Horn:</h3>
-      <p style="font-weight:normal;">Hi! I'm interested!</p>
-  </div>
-    <form>     
-     <input type="text" name="text-1" id="text-1" value="">
-     
+      <p style="font-weight:normal;">Hi! I'm interested!</p>
+  </div>
+    <form>     
+     <input type="text" name="text-1" id="text-1" value="">
+     
 </form>
     <div align="right"><a href="#" class="ui-btn ui-btn-inline">Send</a></div>
         </div>
